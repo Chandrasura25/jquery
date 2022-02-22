@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+</head>
+<body>
+    <div style="height:50px; background-color:aqua; width:70px;position: absolute; "></div>
+    <script>
+        $(document).ready(function(){
+            $("div").click(function(){
+                $("div").animate({
+                  left:'600px', height:'55px',width:'40px', color: '#000', opacity:0.5, backgroundColor:"yellow"
+                },1000);
+             $("div").animate({
+                  height:'80px',width:'70px',  backgroundColor: 'blue',
+                color: '#000', opacity:0.7, top:"300px" 
+                },1000);
+             $("div").animate({
+                  height:'100px',width:'100px',  backgroundColor: 'green',
+                color: '#000', opacity:0.6,left:"0px"
+                },1000);
+             $("div").animate({
+                  height:'150px',width:'150px',  backgroundColor: 'red',
+                color: '#000', top:"0px"
+                },1000);
+
+            })
+        })
+    </script>
+</body>
+</html>
